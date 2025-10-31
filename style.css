@@ -1,0 +1,128 @@
+:root {
+  --space-xs: .5rem;
+  --space-s: 1rem;
+  --space-m: 2rem;
+  --space-l: 3rem;
+  --space-xl: 5rem;
+  --space-2xl: 10rem;
+}
+
+
+body { font-family: "Courier New", monospace;}
+
+img, picture {
+  max-width: 100%;
+  display: block;
+	margin: 0 auto;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+.button {
+	display: block;
+	border: 1px solid black;
+	margin: 0 auto;
+	text-decoration: none;
+	padding: 0.4rem 1.4rem;
+	color: black;
+	border-radius: 3px;
+}
+
+/************** STRUCTURE **************/
+
+.wrapper {
+		max-width: 1300px;
+		margin: auto;
+		padding: 0.3rem 1%;
+}
+.maincontent {
+  position: relative;
+  min-height: 80vh;
+	padding: 1rem 0 3rem 0;
+}
+
+
+
+/************** HELPERS **************/
+/* text */
+.center {
+	text-align: center;
+}
+.small {
+	font-size: 0.8em;
+}
+p {
+	max-width: 800px;
+	margin: 1rem auto;
+}
+
+/* flexbox */
+.flex {
+  display: flex;
+  align-items: center;
+	justify-content: center;
+  gap: var(--space-s);
+}
+@media (max-width: 468px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+}
+.between {justify-content: space-between;}
+.around {justify-content: space-around;}
+.gallery {flex-wrap: wrap;}
+
+
+/************** CONTENT **************/
+
+/* HEADER */
+nav a .logo {
+	width: 40px;
+}
+
+/* HOME */
+.logo {
+width: 150px;
+margin: auto;
+}
+
+/* WORK */
+.gallery {
+gap: 1%;
+margin-bottom: 3rem;
+}
+.gallery .project {
+height: 200px;
+width: 31%;
+margin-bottom: 1.5rem;
+}
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.projectnav {
+ justify-content: flex-end;
+ margin: -0.5rem 0;
+}
+.projectnav.bottom {
+ justify-content: center;
+ margin-top: 1.5rem;
+}
+.projectnav .back{
+text-decoration: none;
+margin-right: 0;
+border: 1px solid black;
+	height: 30px;
+width: 30px;
+border-radius: 50%;
+display: block;
+text-align: center;
+line-height: 30px;
+}
+.singleproject p {
+	text-align: center;
+	margin-bottom: 2rem;
+}
